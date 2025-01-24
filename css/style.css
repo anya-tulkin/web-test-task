@@ -1,0 +1,367 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'Korataki';
+    src: url("../font/Korataki.otf");
+}
+
+body {
+    font-family: "Lato", serif;
+    font-size: 16px;
+}
+.container {
+    max-width: 1460px;
+    padding: 0 30px;
+    margin: 0 auto;
+    flex: 1;
+}
+
+.header {
+    background-color: #231815;
+    height: 40px;
+
+    display: flex;
+}
+.service {
+    position: relative;
+    top: 25%;
+}
+.service-list {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 70px;
+
+    font-weight: 500px;
+    font-size: 16px;
+}
+
+.service-link {
+    color: #ffffff;
+    align-self: center;
+}
+
+.nav-bar-list {
+    display: flex;
+    column-gap: 100px;
+    flex-wrap: wrap;
+}
+
+.nav-btn {
+    display: none;
+}
+
+.nav-menu {
+    align-self: center;
+    margin-right: 130px;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 12px 0;
+}
+
+
+.logo-list {
+    display: flex;
+    align-items: flex-end;
+
+    margin-right: 240px;
+}
+
+.logo-list-item {
+    padding-right: 8px;
+}
+
+.nav-link {
+    font-size: 16px;
+    font-weight: 400;
+    color: #231815;
+
+    text-transform: uppercase;
+}
+
+.bag-btn {
+    position: relative;
+    display: flex;
+}
+
+.product-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+    background-color: #ffffff;
+    color: #0C0C0C;
+    border-radius: 50%;
+    font-size: 12px;
+
+    width: 18px;
+    height: 18px;
+}
+
+
+.search-bag {
+    display: flex;
+}
+
+.search-form {
+    margin-right: 20px;
+}
+
+.bag {
+    color: #ffffff;
+    background-color: #0C0C0C;
+    background-repeat: no-repeat;
+    border-radius: 88.84px;
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+
+    width: 138px;
+    height: 39px;
+}
+
+.bag:before {
+    content: url("../img/bag.svg");
+}
+
+.search-form {
+    position: relative;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #F5F5F5;
+    border-radius: 88.64px;
+}
+
+.search-input::after {content:""; clear:both; display:table}
+
+.search-input {
+    width: 170px;
+    height: 39px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.search-btn {
+    width: 42px;
+    height: 42px;
+    background: none;
+    border: none;
+    position: absolute;
+    top: -2px;
+    right: 0;
+}
+
+.search-btn:before {
+    content: url("../img/search-black.svg");
+}
+
+.search-form, .bag {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.search-form {
+    margin-right: 20px;
+}
+
+.main-container h2 {
+    font-family: "Korataki";
+    font-size: 44px;
+    font-weight: 400;
+
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 50px;
+    grid-column-gap: 40px;
+
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: 600;
+
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.product-price-new {
+    color: #E45302;
+    margin-right: 16px;
+}
+.product-price-old {
+    color: #808080;
+    text-decoration: line-through;
+}
+
+.product-card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+.product-card:hover .detail {
+    display: block;
+}
+
+.detail {
+    background-color: #E45302;
+    border-radius: 88.64px;
+    color: #ffffff;
+    position: absolute;
+    width: 258px;
+    height: 48px;
+    top: 85%;
+
+    display: none;
+}
+
+.sale-btn {
+    background-color: #0C0C0C;
+    border-radius: 88.64px;
+    color: #ffffff;
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    left: 10px;
+
+    width: 126px;
+    height: 38px;
+    font-size: 14px;
+}
+
+.page-footer {
+    height: 320px;
+    background-color: #0C0C0C;
+
+    margin-top: 60px;
+}
+
+.footer-container {
+    padding-top: 60px;
+    height: 320px;
+
+    display: grid;
+
+
+    grid-template-columns: 239px 255px 150px 242px;
+    grid-template-rows: 90px 160px; ;
+    justify-content: space-between;
+}
+
+
+.policy-content {
+    grid-area: 2/1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contacts {
+    grid-area: 2/2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.payment {
+    grid-area: 2/4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer-item-logo {
+    display: flex;
+    align-items: flex-end;
+}
+
+.footer-container p {
+    color: #808080;
+}
+
+.policy-content p, a {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.policy a {
+    text-decoration-line: underline;
+    color: #808080;
+}
+
+.contacts h3, .footer-nav h3, .address h3 {
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.email {
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+.address p {
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.contacts p, a{
+    color: #FFFFFF;
+}
+
+.footer-nav-list {
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+}
+
+.footer-nav-item a{
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.document {
+    text-align: right;
+}
+
+.document p:first-child {
+    padding-bottom: 20px;
+}
+
+.payment-list {
+    display: flex;
+    gap: 33px;
+    justify-content: end;
+    align-items: flex-end;
+}
+
