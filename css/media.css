@@ -21,7 +21,7 @@
 
 }
 
-@media (max-width: 770px) {
+@media (max-width: 930px) {
 
     .nav-bar-list, .search-bag, .header {
         display: none;
@@ -120,7 +120,7 @@
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 750px) {
 
     .logo-list {
         margin-right: 0;
